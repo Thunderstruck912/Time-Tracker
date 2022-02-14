@@ -1,0 +1,28 @@
+.radio_wrapper{
+  padding-bottom: 5px;
+  margin-right: 25px;
+  float:right;
+  cursor: pointer;
+}
+
+.radio_setting{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 14px;
+}
+
+.radio_wrapper span{
+  margin:5px 
+}
+
+.active {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.disabled {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
+}

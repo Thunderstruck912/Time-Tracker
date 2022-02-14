@@ -1,0 +1,28 @@
+.info_wrapper{
+  position:absolute;
+  bottom: 0;
+}
+
+.img{
+  cursor: pointer;
+  margin:0 38px 38px 0px;
+  width: 45px;
+  height: 45px;
+}
+
+.span{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 38px;
+  right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  padding-bottom: 2px;
+}
+
+.span:hover{
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,30 @@
+.input_wrapper{
+  padding-bottom: 0px;
+  margin:14px 20px;
+  float:right;
+}
+
+.input_setting{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 14px;
+}
+
+.input_btn{
+  padding:7px 14px;
+  width: 80px;
+  border: 1px solid white;
+}
+
+.input_btn:hover{
+background-color: #5c5c5c;
+}
+
+.input{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}

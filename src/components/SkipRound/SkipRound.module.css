@@ -1,0 +1,19 @@
+.skip_wrapper{
+  position: absolute;
+  top:33px;
+  left:50%;
+  margin-left:-65px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.skip_wrapper span{
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 2px;
+}
+
+.skip_wrapper span:hover{
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./style/app.css";
+import NavBtn from "./UI/NavBtn/NavBtn";
+import NavContentSetting from "./components/NavContentSetting/NavContentSetting";
+import TotalCount from "./components/TotalCount/TotalCount";
+import SkipRound from "./components/SkipRound/SkipRound";
+import Tittle from "./components/Tittle/Tittle";
+import Header from "./components/header/header";
+import AboutInfo from "./components/Info/AboutInfo";
+import Timer from "./components/Timer/Timer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Header />
+			<div className="Main">
+				<NavBtn />
+				<NavContentSetting />
+				<Timer />
+				<TotalCount />
+				<SkipRound />
+				<Tittle />
+				<AboutInfo />
+			</div>
+		</div>
+	);
 }
 
 export default App;

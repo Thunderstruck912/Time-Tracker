@@ -1,0 +1,28 @@
+.nav {
+  padding:15px;
+  display: flex;
+}
+
+.nav_disabled{
+  border:1px solid white;
+  height:50px;
+  padding:13px 30px;
+  font-size:18px;
+  font-weight: bold;
+  background-color: #071422;
+  z-index: 10;
+}
+
+.nav_active{
+  background-color: #b1363c;
+  border:1px solid white;
+  height:50px;
+  padding:13px 30px;
+  font-size:18px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.nav_disabled:hover{
+  background-color: #5c5c5c;
+}
