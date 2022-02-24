@@ -8,6 +8,7 @@ import Tittle from "./components/Tittle/Tittle";
 import Header from "./components/header/header";
 import AboutInfo from "./components/Info/AboutInfo";
 import Timer from "./components/Timer/Timer";
+import ResetRound from "./components/ResetRound/ResetRound.jsx";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<Timer />
 				<TotalCount />
 				<SkipRound />
+        <ResetRound/>
 				<Tittle />
 				<AboutInfo />
 			</div>

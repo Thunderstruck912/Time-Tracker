@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./SkipRound.module.css";
 import {useSelector, useDispatch} from "react-redux";
-import {setStatusAction} from "../../store/timerStatus";
 import {
 	defaultTimerSetting,
 	timerPauseSetting,
@@ -10,7 +9,7 @@ import {
 const SkipRound = () => {
 	const dispatch = useDispatch();
 	const status = useSelector((state) => state.status.littlePause);
-	const totalCount = useSelector((state) => state.totalCount.totalCount);
+	const count = useSelector((state) => state.totalCount);
 
 	return (
 		<div className={classes.skip_wrapper}>
@@ -19,7 +18,7 @@ const SkipRound = () => {
 					Пропустить перерыв
 				</span>
 			) : (
-				<span onClick={() => dispatch(timerPauseSetting({status, totalCount}))}>
+				<span onClick={() => dispatch(timerPauseSetting({status, count}))}>
 					Пропустить раунд
 				</span>
 			)}

@@ -19,10 +19,10 @@ export const defaultTimerSetting = () => {
 	};
 };
 
-export const timerPauseSetting = ({status, totalCount}) => {
+export const timerPauseSetting = ({status, count}) => {
 	return (dispatch) => {
 		dispatch(setReloadStatusAction(true));
-		if ((totalCount + 1) % 3 === 0) {
+		if ((count.totalCount + 1) % count.roundCount === 0) {
 			dispatch(setLittlePauseAction(!status.littlePause));
 			dispatch(resetLargePauseTimeAction());
 			dispatch(addTotalCountAction(1));
@@ -31,5 +31,21 @@ export const timerPauseSetting = ({status, totalCount}) => {
 		dispatch(resetLittlePauseTimeAction());
 		dispatch(addTotalCountAction(1));
 		return;
+	};
+};
+
+export const resetRound = () => {
+	return (dispatch) => {
+		dispatch(setStatusAction({play: false}));
+		dispatch(resetTimeAction());
+	};
+};
+
+export const resetPause = ({count}) => {
+	return (dispatch) => {
+		dispatch(setStatusAction({play: false}));
+		if (count.totalCount % count.roundCount === 0) {
+			dispatch(resetLargePauseTimeAction());
+		} else dispatch(resetLittlePauseTimeAction());
 	};
 };

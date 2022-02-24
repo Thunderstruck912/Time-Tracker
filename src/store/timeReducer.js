@@ -1,6 +1,6 @@
 const defaultState = {
 	timer: {
-		minutes: 0,
+		minutes: 25,
 		seconds: 0,
 	},
 	defaultTime: {

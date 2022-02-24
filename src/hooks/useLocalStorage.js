@@ -5,13 +5,21 @@ export const useLocalStorage = (key, defaultValue, action) => {
 	const dispatch = useDispatch();
 	useEffect(() => {
 		const storage = JSON.parse(localStorage.getItem(key));
-		switch (typeof storage) {
-			case "boolean":
-				return dispatch(action(storage));
-			case "number":
-				return dispatch(action(storage));
-			default:
-				return dispatch(action(defaultValue));
+		if (storage !== undefined && storage !== null) {
+			switch (typeof storage) {
+				case "boolean":
+					return dispatch(action(storage));
+				case "number":
+					return dispatch(action(storage));
+				case "array":
+					return dispatch(action(storage));
+				case "object":
+					return dispatch(
+						action({minutes: storage.minutes, seconds: storage.seconds}),
+					);
+				default:
+					return dispatch(action(defaultValue));
+			}
 		}
 	}, []);
 
