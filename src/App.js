@@ -20,7 +20,7 @@ function App() {
 				<Timer />
 				<TotalCount />
 				<SkipRound />
-        <ResetRound/>
+        			<ResetRound />
 				<Tittle />
 				<AboutInfo />
 			</div>
