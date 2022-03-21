@@ -1,3 +1,6 @@
+#Time Tracker
+
+
 ### `GitHub Pages`
   
 Open [https://thunderstruck912.github.io/Time-Tracker-React-Redux/](https://thunderstruck912.github.io/Time-Tracker-React-Redux/)
