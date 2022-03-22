@@ -3,7 +3,7 @@
 
 ### `GitHub Pages`
   
-Open [https://thunderstruck912.github.io/Time-Tracker-React-Redux/](https://thunderstruck912.github.io/Time-Tracker-React-Redux/)
+Open [https://thunderstruck912.github.io/Time-Tracker/](https://thunderstruck912.github.io/Time-Tracker/)
 
 
 ### `npm start`
